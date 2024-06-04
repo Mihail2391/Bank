@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bank Card Form</title>
+		<link rel="stylesheet" href="./index.css" />
+	</head>
+	<body>
+		<div class="form-container">
+			<div class="form">
+				<select id="bankName">
+					<option value="">Выберите банк</option>
+					<option value="Сбербанк">Сбербанк</option>
+					<option value="ВТБ">ВТБ</option>
+
+					<option value="Альфа-Банк">Альфа-Банк</option>
+
+					<option value="Тинькофф Банк">Тинькофф Банк</option>
+				</select>
+				<select id="cardType">
+					<option value="">Выберите тип платежной системы</option>
+					<option value="Visa">Visa</option>
+					<option value="MasterCard">MasterCard</option>
+					<option value="Мир">Мир</option>
+				</select>
+				<input
+					type="text"
+					id="cardNumber"
+					placeholder="Номер карты (16 цифр)"
+				/>
+				<input
+					type="text"
+					id="cardName"
+					placeholder="Имя держателя карты"
+				/>
+				<input
+					type="text"
+					id="cardExpiry"
+					placeholder="Месяц и год окончания (MM/YY)"
+				/>
+				<button type="button" onclick="submitForm()">Submit</button>
+			</div>
+			<div class="card-preview" id="cardPreview">
+				<img class="bank-name" />
+				<div class="card-number">0000 0000 0000 0000</div>
+				<div class="card-footer">
+					<div class="card-name">Card Holder</div>
+					<div class="card-date">
+						<div class="card-expiry">MM/YY</div>
+						<img class="card-type" />
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<table>
+			<thead>
+				<tr>
+					<th>Название банка</th>
+					<th>Тип платежной системы</th>
+					<th>Номер карты</th>
+					<th>Имя держателя карты</th>
+					<th>Месяц и год окончания</th>
+				</tr>
+			</thead>
+			<tbody id="cardTableBody"></tbody>
+		</table>
+		<script src="./index.js"></script>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+body {
+	font-family: Arial, sans-serif;
+}
+.form-container {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+}
+.form {
+	max-width: 300px;
+}
+.form input {
+	display: block;
+	margin-bottom: 10px;
+	width: 100%;
+	padding: 8px;
+	box-sizing: border-box;
+}
+.card-preview {
+	padding: 20px;
+	width: 400px;
+	height: 250px;
+	background-color: #000;
+	color: white;
+	border-radius: 32px;
+}
+
+.card-footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.card-date {
+	display: flex;
+	align-items: center;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+table,
+th,
+td {
+	border: 1px solid #000;
+}
+th,
+td {
+	padding: 8px;
+	text-align: left;
+}
+
+.card-number {
+	font-weight: bold;
+	font-size: 40px;
+	margin: 20px 0px;
+}
+
+.card-type {
+	height: 50px;
+}
+
+.card-name {
+	text-transform: uppercase;
+}
+
+.bank-name {
+	height: 50px;
+}
